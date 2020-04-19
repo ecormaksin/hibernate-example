@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Example1_ServiceTest {
+class Example1Test {
 	
 	@Autowired
 	ContactRepository repository;
@@ -29,7 +29,7 @@ class Example1_ServiceTest {
 								.build();
 		
 		repository.save(expected);
-		Contact actual = repository.findById(1).orElse(null);
+		Contact actual = repository.findById(expected.getId()).orElse(null);
 		assertEquals(expected, actual);
 	}
 
