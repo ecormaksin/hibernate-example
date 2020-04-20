@@ -7,8 +7,9 @@ import java.net.URL;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
 class Example1Test {
 	
 	@Autowired

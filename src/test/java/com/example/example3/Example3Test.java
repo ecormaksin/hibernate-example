@@ -1,15 +1,16 @@
-package com.example;
+package com.example.example3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 import com.example.example3.Product;
 import com.example.example3.ProductRepository;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
 class Example3Test {
 	
 	@Autowired
