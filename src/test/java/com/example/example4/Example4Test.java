@@ -1,4 +1,4 @@
-package com.example.example3;
+package com.example.example4;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,10 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
-class Example3Test {
+class Example4Test {
 	
 	@Autowired
-	ProductWithBasicAnnotationRepository repository;
+	ProductWithoutBasicAnnotationRepository repository;
 
 	@Test
 	void test() throws Exception {
