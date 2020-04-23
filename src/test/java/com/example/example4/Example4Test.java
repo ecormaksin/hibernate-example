@@ -14,7 +14,7 @@ class Example4Test {
 	ProductWithoutBasicAnnotationRepository repository;
 
 	@Test
-	void test() throws Exception {
+	void testBasicAnnotationBeingImplicitlyImplied() throws Exception {
 		Product expected = Product.builder()
 								.id(1)
 								.sku("Sku")

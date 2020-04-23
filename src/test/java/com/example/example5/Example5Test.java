@@ -1,4 +1,4 @@
-package com.example.example3;
+package com.example.example5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,13 +8,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
-class Example3Test {
+class Example5Test {
 	
 	@Autowired
-	ProductWithBasicAnnotationRepository repository;
+	ProductWithExplicitColumnNamingRepository repository;
 
 	@Test
-	void testBasicAnnotationDeclaredExplicitly() throws Exception {
+	void testExplicitColumnNaming() throws Exception {
 		Product expected = Product.builder()
 								.id(1)
 								.sku("Sku")

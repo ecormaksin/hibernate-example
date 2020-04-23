@@ -16,7 +16,7 @@ class Example1Test {
 	ContactRepository repository;
 
 	@Test
-	void test() throws Exception {
+	void testSimpleTableAndDomainModel() throws Exception {
 		Name name = Name.builder()
 						.first("FirstName")
 						.middle("MiddleName")
